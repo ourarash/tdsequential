@@ -1,6 +1,6 @@
 # TD Sequential
 
-> Implementation of TD Sequential Indicator in node.js. 
+Implementation of TD Sequential Indicator in node.js. 
 
 Tom Demark Sequential indicator specifies when a trend is forming or is getting exhausted, and when to get into a trade. It is widely used in Forex, stock market, and cryptocurrency trading.
 
@@ -76,7 +76,7 @@ console.log("result: ", JSON.stringify(result, null, 2));
 ## Examples:
 This package is used to implement TD Sequential indicator in Bitcoin CrazYness app:
 
-[BitcoinCrazYness.com](bitcoincrazyness.com)
+[BitcoinCrazYness.com](http://bitcoincrazyness.com)
 
 Below is an example screenshot. The setup numbers are annotated on the top, and the countdown numbers are annotated on the bottom.
 
