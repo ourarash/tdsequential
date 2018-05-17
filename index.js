@@ -1,15 +1,15 @@
 //Implementation of TD Sequential in node.js
 //Written by Ari Saif (ourarash@gmail.com)
 //See this for explanations: http://practicaltechnicalanalysis.blogspot.com/2013/01/tom-demark-sequential.html
-exports.TDSequential = function(ohlc) {
-  TDSequential(ohlc);
+module.exports = function(ohlc) {
+  return TDSequential(ohlc);
 };
 
 var resetSetupCounterAfterCountdownHit13 = true;
 var resetCountdownOnTDST = true;
 function TDSequential(ohlc) {
   if (!ohlc || ohlc.length === 0) {
-    return;
+    return [];
   }
 
   let result = [];
@@ -107,8 +107,8 @@ function TDSequential(ohlc) {
       // Compare the size of the two setups. The size is the difference between the true high and true low of a setup.
       // - if the second setup is equal or greater than the previous one , but less than 1.618 times its size, then Setup recycle will occur – the trend re-energize itself. Whichever Setup has the larger true range will become the active Setup.
       // - ignore setup recycle if the new setup is smaller or 1.618 times and more, bigger than the previous one – most probably price exhaustion area.
-      this.calculateTDBuyCountdown(result, resultObj, ohlc, item, i);
-      this.calculateTDSellCountdown(result, resultObj, ohlc, item, i);
+      calculateTDBuyCountdown(result, resultObj, ohlc, item, i);
+      calculateTDSellCountdown(result, resultObj, ohlc, item, i);
     }
 
     result.push(resultObj);
@@ -122,7 +122,7 @@ function calculateTDSellCountdown(result, resultObj, ohlc, item, i) {
     // Sell setup appears
     (result[i - 1].sellSetup && resultObj.buySetup) ||
     // Close above TDSTBuy
-    (this.resetCountdownOnTDST && item.close < item.TDSTSell)
+    (resetCountdownOnTDST && item.close < item.TDSTSell)
   ) {
     resultObj.sellCoundownIndex = 0;
     resultObj.countdownResetForTDST = true;
@@ -143,7 +143,7 @@ function calculateTDSellCountdown(result, resultObj, ohlc, item, i) {
 
   //A.S: If coundown  hit 13, and we were counting another  setup, we reset that  setup
   if (
-    this.resetSetupCounterAfterCountdownHit13 &&
+    resetSetupCounterAfterCountdownHit13 &&
     (resultObj.sellCoundownIndex === 13 && resultObj.sellSetupIndex > 0)
   ) {
     resultObj.sellSetupIndex = 1;
@@ -164,7 +164,7 @@ function calculateTDBuyCountdown(result, resultObj, ohlc, item, i) {
     // Sell setup appears
     (result[i - 1].buySetup && resultObj.sellSetup) ||
     // Close above TDSTBuy
-    (this.resetCountdownOnTDST && item.close > item.TDSTBuy)
+    (resetCountdownOnTDST && item.close > item.TDSTBuy)
   ) {
     resultObj.buyCoundownIndex = 0;
     resultObj.countdownResetForTDST = true;
@@ -184,7 +184,7 @@ function calculateTDBuyCountdown(result, resultObj, ohlc, item, i) {
   }
 
   //A.S: If coundown  hit 13, and we were counting another buy setup, we reset that buy setup
-  if (this.resetSetupCounterAfterCountdownHit13 && (resultObj.buyCoundownIndex === 13 && resultObj.buySetupIndex > 0)) {
+  if (resetSetupCounterAfterCountdownHit13 && (resultObj.buyCoundownIndex === 13 && resultObj.buySetupIndex > 0)) {
     resultObj.buySetupIndex = 1;
   }
 

@@ -53,7 +53,7 @@ npm i -S tdsequential
 ## Examples:
 This package is used to implement TD Sequential indicator in Bitcoin CrazYness app:
 
-bitcoinCrazYness.com
+[BitcoinCrazYness.com](bitcoincrazyness.com)
 
 ## License
 
