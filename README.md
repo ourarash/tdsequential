@@ -46,9 +46,6 @@ The output is an array of the same size where each entry has the following field
   countdownResetForTDST: false                      //Indicates the countdown got reset due to observing TDST
 }
 ```
-## Information about TD Sequential Indicator:
-See [this link](http://practicaltechnicalanalysis.blogspot.com/2013/01/tom-demark-sequential.html).
-
 
 ## Install
 
@@ -80,6 +77,11 @@ console.log("result: ", JSON.stringify(result, null, 2));
 This package is used to implement TD Sequential indicator in Bitcoin CrazYness app:
 
 [BitcoinCrazYness.com](bitcoincrazyness.com)
+
+Here is an example screenshot:
+
+![TD Sequential Example in BitcoinCrazYness App](https://github.com/ourarash/tdsequential/blob/master/screenshots/example1.jpg)
+
 
 ## License
 
