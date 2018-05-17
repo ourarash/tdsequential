@@ -1,6 +1,14 @@
 # TD Sequential
 
-> Implementation of TD Sequential Indicator in node.js.
+> Implementation of TD Sequential Indicator in node.js. 
+
+Tom Demark Sequential indicator specifies when a trend is forming or is getting exhausted, and when to get into a trade. It is widely used in Forex, stock market, and cryptocurrency trading.
+
+TD Sequential indicator consist of two components. TD Setup is the first one and it is a prerequisite for the TD Countdown
+
+## Package Description
+
+This module is an implementation of TD Sequential in node.js based on [this link](http://practicaltechnicalanalysis.blogspot.com/2013/01/tom-demark-sequential.html).
 
 The input is an array of ohlc (open, high, low, and close) values. For example:
 
