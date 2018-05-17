@@ -78,9 +78,11 @@ This package is used to implement TD Sequential indicator in Bitcoin CrazYness a
 
 [BitcoinCrazYness.com](bitcoincrazyness.com)
 
-Here is an example screenshot:
+Below is an example screenshot. The setup numbers are annotated on the top, and the countdown numbers are annotated on the bottom.
 
-![TD Sequential Example in BitcoinCrazYness App](https://github.com/ourarash/tdsequential/blob/master/screenshots/example1.jpg)
+A perfrect setup is highlighted with a "P" mark.
+
+![TD Sequential Example in BitcoinCrazYness App](https://raw.githubusercontent.com/ourarash/tdsequential/master/screenshots/example1.jpg)
 *Example of TD Sequential from BitcoinCrazYness app*
 
 ## License
