@@ -1,0 +1,27 @@
+{
+  "name": "tdsequential",
+  "version": "1.0.0",
+  "description": "NPM implementation of TD Sequential indicator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ourarash/tdsequential.git"
+  },
+  "keywords": [
+    "TD",
+    "Sequential",
+    "Indicator",
+    "Trading",
+    "Cryptocurrency",
+    "Stock"
+  ],
+  "author": "Ari Saif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ourarash/tdsequential/issues"
+  },
+  "homepage": "https://github.com/ourarash/tdsequential#readme"
+}
