@@ -1,6 +1,6 @@
 {
   "name": "tdsequential",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "NPM implementation of TD Sequential indicator",
   "main": "index.js",
   "scripts": {
