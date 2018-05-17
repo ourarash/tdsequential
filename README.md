@@ -85,7 +85,7 @@ A perfrect setup is highlighted with a "P" mark.
 ![TD Sequential Example in BitcoinCrazYness App](https://raw.githubusercontent.com/ourarash/tdsequential/master/screenshots/example1.jpg)
 *Example of TD Sequential from BitcoinCrazYness app*
  
-![TD Sequential Example in BitcoinCrazYness App](https://raw.githubusercontent.com/ourarash/tdsequential/master/screenshots/example2.jpg)
+![TD Sequential Example in BitcoinCrazYness App](https://raw.githubusercontent.com/ourarash/tdsequential/master/screenshots/example3.jpg)
 
 ## License
 
