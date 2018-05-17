@@ -4,8 +4,8 @@
 
 The input is an array of ohlc (open, high, low, and close) values. For example:
 
-```
-ohlc = [{
+```javascript
+let ohlc = [{
   open: 100,
   high: 200,
   low: 10,
@@ -16,7 +16,7 @@ ohlc = [{
 
 The output is an array of the same size where each entry has the following fields:
 
-```
+```javascript
 {
   buySetupIndex: 0,                                 //Counting for buy setup
   sellSetupIndex: 0,                                //Counting for sell setup
