@@ -50,6 +50,24 @@ npm i -S tdsequential
 
 ## Usage
 
+```javascript
+var TDSequential = require("tdsequential");
+
+let result = TDSequential([
+  {
+    time: 1525651200,
+    close: 9377.81,
+    high: 9662.23,
+    low: 9202.13,
+    open: 9643.99,
+    volume: 73842.44,
+  },
+  ...
+]);
+
+console.log("result: ", JSON.stringify(result, null, 2));
+```
+
 ## Examples:
 This package is used to implement TD Sequential indicator in Bitcoin CrazYness app:
 
