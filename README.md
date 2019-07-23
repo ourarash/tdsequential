@@ -1,5 +1,13 @@
 # TD Sequential
 
+[![NPM](https://badge.fury.io/js/tdsequential.svg)](https://www.npmjs.com/package/tdsequential)
+[![NPM Downloads][downloadst-image]][downloads-url]
+
+[downloads-image]: https://img.shields.io/npm/dm/tdsequential.svg
+[downloadst-image]: https://img.shields.io/npm/dt/tdsequential.svg
+[downloads-url]: https://npmjs.org/package/tdsequential
+
+
 Implementation of TD Sequential Indicator in node.js. 
 
 Tom Demark Sequential indicator specifies when a trend is forming or is getting exhausted, and when to get into a trade. It is widely used in Forex, stock market, and cryptocurrency trading.
